@@ -1,0 +1,400 @@
+/* =================== Extra Small Responsive Css Part Start =================== */
+
+@media (max-width: 575.98px) {
+
+    /* ----------------- List Count Responsive Part Start ----------------- */
+    .container {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #list_count .container {
+        flex-wrap: wrap;
+    }
+
+    .head_info {
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .box{
+        position: absolute;
+        bottom: 40px;
+    }
+
+    .add_task {
+        width: 100%;
+    }
+
+    .box button {
+        right: 0;
+    }
+
+    .box button:hover {
+        color: #573b3b;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .count_num {
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    #list_count .container p {
+        font-size: 8px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .input_tooltips {
+        width: 180px;
+        font-size: 13px;
+        top: -40px;
+    }
+
+    /* ----------------- List Count Responsive Part End ----------------- */
+
+    /* ----------------- Task Responsive Part Start ----------------- */
+
+    #list_store .container {
+        transform: translateY(0px);
+    }
+
+    .list {
+        width: 100%;
+        border-radius: 0px;
+        padding: 30px 0;
+        gap: 35px;
+    }
+
+    .main_list {
+        width: 100%;
+        background-color: #ab8b8d;
+        padding: 0px 0px;
+    }
+
+    .main_list .new_input {
+        width: 90%;
+    }
+
+    .complete_btn, .edit_btn, .save_btn, .delete_btn {
+        position: absolute;
+        bottom: -25px;
+    }
+
+    .delete_btn {
+        right: 10px;
+    }
+
+    .edit_btn, .save_btn {
+        color: #6f5253;
+        right: 40px;
+    }
+
+    .complete_btn {
+        color: #6f5253;
+        bottom: -27px;
+        right: 85px;
+    }
+
+    .edit_btn:hover, .save_btn:hover, .delete_btn:hover {
+        color: #6f5253;
+    }
+
+    .tooltips {
+        opacity: 0;
+    }
+
+    .newInput_tooltips{
+        width: 250px;
+        font-size: 13px;
+    }
+    /* ----------------- Task Responsive Part End ----------------- */
+}
+
+/* =================== Extra Small Responsive Css Part End =================== */
+
+/* =================== Small Responsive Css Part Start =================== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    /* ----------------- List Count Responsive Part Start ----------------- */
+
+    .container{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .head_info{
+        gap: 30px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .count_num{
+        width: 150px;
+        height: 150px;
+        font-size: 32px;
+    }
+
+    .add_task{
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .box button{
+        margin-top: 30px;
+        right: 0;
+    }
+
+    .box button:hover {
+        color: #573b3b;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    #list_count .container p {
+        font-size: 8px;
+        right: 20px;
+        bottom: 70px;
+    }
+
+    .input_tooltips {
+        width: 180px;
+        font-size: 13px;
+        top: -10px;
+    }
+
+    /* ----------------- List Count Responsive Part End ----------------- */
+
+    /* ----------------- Task Responsive Part Start ----------------- */
+
+    .list {
+        width: 100%;
+        border-radius: 0px;
+        padding: 30px 0;
+        gap: 35px;
+    }
+
+    .main_list {
+        width: 100%;
+        background-color: #ab8b8d;
+        padding: 0px 0px;
+    }
+
+    .main_list .new_input {
+        width: 90%;
+    }
+
+    .complete_btn, .edit_btn, .save_btn, .delete_btn {
+        position: absolute;
+        bottom: -25px;
+    }
+
+    .delete_btn {
+        right: 30px;
+    }
+
+    .edit_btn, .save_btn {
+        color: #6f5253;
+        right: 70px;
+    }
+
+    .complete_btn {
+        color: #6f5253;
+        bottom: -27px;
+        right: 125px;
+    }
+
+    .edit_btn:hover, .save_btn:hover, .delete_btn:hover {
+        color: #6f5253;
+    }
+
+    .tooltips {
+        opacity: 0;
+    }
+
+    .newInput_tooltips{
+        width: 250px;
+        font-size: 13px;
+    }
+    /* ----------------- Task Responsive Part End ----------------- */
+}
+
+/* =================== Small Responsive Css Part End =================== */
+
+/* =================== Medium Responsive Css Part Start =================== */
+
+@media(min-width:768px) and (max-width: 991.98px){
+
+    /* ----------------- List Count Responsive Part Start ----------------- */
+    .container{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .head_info{
+        gap: 30px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .count_num{
+        width: 250px;
+        height: 250px;
+    }
+
+    .add_task{
+        width: 450px;
+        margin-top: 30px;
+    }
+
+    .box button{
+        margin-top: 30px;
+        right: 0;
+    }
+    
+    .box button:hover {
+        color: #573b3b;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    #list_count .container p {
+        font-size: 12px;
+        right: 30px;
+        bottom: 60px;
+    }
+
+    .input_tooltips {
+        width: 180px;
+        font-size: 13px;
+        top: -10px;
+    }
+    /* ----------------- List Count Responsive Part End ----------------- */
+
+    /* ----------------- Task Responsive Part Start ----------------- */
+
+    .list {
+        width: 100%;
+        border-radius: 0px;
+        padding: 30px 0;
+        gap: 35px;
+    }
+
+    .main_list {
+        width: 100%;
+        background-color: #ab8b8d;
+        padding: 0px 0px;
+    }
+
+    .main_list .new_input {
+        width: 90%;
+    }
+
+    .complete_btn, .edit_btn, .save_btn, .delete_btn {
+        position: absolute;
+        bottom: -25px;
+    }
+
+    .delete_btn {
+        right: 30px;
+    }
+
+    .edit_btn, .save_btn {
+        color: #6f5253;
+        right: 70px;
+    }
+
+    .complete_btn {
+        color: #6f5253;
+        bottom: -27px;
+        right: 125px;
+    }
+
+    .edit_btn:hover, .save_btn:hover, .delete_btn:hover {
+        color: #6f5253;
+    }
+
+    .tooltips {
+        opacity: 0;
+    }
+    /* ----------------- Task Responsive Part End ----------------- */
+}
+
+/* =================== Medium Responsive Css Part End =================== */
+
+/* =================== Large Responsive Css Part Start =================== */
+
+@media(min-width: 992px) and (max-width: 1199.98px){
+
+    /* ----------------- List Count Responsive Part Start ----------------- */
+    .container{
+        width: 100%;
+    }
+
+    .head_info{
+        gap: 30px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .count_num{
+        width: 250px;
+        height: 250px;
+    }
+
+    .add_task{
+        width: 450px;
+        margin-top: 30px;
+    }
+
+    .box button{
+        margin-top: 30px;
+        right: 0;
+    }
+
+    #list_count .container p {
+        right: 30px;
+        bottom: 60px;
+    }
+
+    .input_tooltips {
+        top: -10px;
+    }
+    /* ----------------- List Count Responsive Part End ----------------- */
+}
+
+/* =================== Large Responsive Css Part End =================== */
+
+/* =================== Extra Large Responsive Css Part Start =================== */
+
+@media(min-width: 1200px) and (max-width: 1399.98px){
+
+    /* ----------------- List Count Responsive Part Start ----------------- */
+
+    .head_info{
+        gap: 50px;
+    }
+
+    #list_count .container p {
+        right: 30px;
+        bottom: 60px;
+    }
+
+    /* ----------------- List Count Responsive Part End ----------------- */
+}
+
+/* =================== Extra Large Responsive Css Part End =================== */

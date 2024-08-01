@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="image/to_do_list_icon.png" />
+  </head>
+
+  <body>
+    <!-- =================== List Count Section Start =================== -->
+
+    <section id="list_count">
+      <div class="container">
+        <!-- -- Header -- -->
+        <div class="head_info">
+          <h1>Daily To Do List</h1>
+          <h4>Make easy to remember your <br />task compilation</h4>
+
+          <!-- -- For Adding Task Part -- -->
+          <div class="box">
+            <div class="input_tooltips">Please Input A Task</div>
+            <input type="text" placeholder="Write Down Task" class="add_task" />
+            <button class="add_task_btn">Add</button>
+          </div>
+        </div>
+
+        <!-- -- List Part -- -->
+        <div class="list_info">
+          <!-- -- Count Part -- -->
+          <div class="count">
+            <div class="count_num">
+              <span class="taskCompleted_count"></span>
+              <!-- total completed task -->
+              <span class="slash"></span>
+              <span class="totalTask_count"></span>
+              <!-- total task -->
+            </div>
+          </div>
+        </div>
+        <p>-by Sharanpreet Singh</p>
+      </div>
+    </section>
+
+    <!-- =================== List Count Section Start =================== -->
+
+    <!-- =================== Tasks Section Start =================== -->
+
+    <section id="list_store">
+      <div class="container">
+        <div class="list"></div>
+      </div>
+    </section>
+
+    <!-- =================== Tasks Section End =================== -->
+
+    <!-- =================== JavaScript Link Part =================== -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

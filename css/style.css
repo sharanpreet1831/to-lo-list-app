@@ -1,0 +1,325 @@
+/* ==================== font link part start ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ==================== font link part end ==================== */
+
+/* ==================== common css part start ==================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #9d8484;
+}
+
+.container{
+    width: 1200px;
+    border-radius: 30px;
+    background: #cdafb2;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root{
+    --roboto: "Roboto Mono", monospace;
+    --shantell: "Shantell Sans", cursive;
+}
+
+/* ==================== common css part end ==================== */
+
+/* ==================== list count css part start ==================== */
+
+#list_count .container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 50px 0px 100px;
+    position: relative;
+}
+
+#list_count .container p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--shantell);
+    color: #6f5253;
+    position: absolute;
+    right: 50px;
+    bottom: 70px;
+}
+
+/* -- head/title -- */
+.head_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: var(--roboto);
+    color: #6f5253;
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--roboto);
+    color: #855f5f;
+    text-align: center;
+}
+
+/* -- For Adding Task Part -- */
+.box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.add_task{
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe9e3;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--shantell); 
+    color: #6f5253;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.box button{
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ab8b8d;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: var(--roboto);
+    color: #6f5253;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.box button:hover{
+    color: #ffe9e3;
+    transform: scale(1.1);
+    box-shadow: 3px -1px 5px #573b3b;
+}
+
+.box button:active{
+    transform: none;
+    box-shadow: none;
+}
+
+/* -- Task Completing Information -- */
+.list_info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* -- Counting Number of Task -- */
+.count_num{
+    width: 300px;
+    height: 300px;
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    box-shadow: 10px -5px 20px #573b3b, inset -15px 5px 30px #573b3b, inset 20px -20px 40px #ffe9e3, 2px 0px 1px #573b3b;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: var(--roboto);
+    color: #6f5253;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: water 5s linear infinite; /* -- keyframe Animation -- */
+}
+
+/* -- @Keyframe Animation for count_num -- */
+@keyframes water {
+    20% {
+        border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+    40%{
+        border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+    60%{
+        border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+    80%{
+        border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
+}
+
+/* ==================== list count css part end ==================== */
+
+/* ==================== task css part start ==================== */
+
+#list_store .container{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50px);
+}
+
+.list{
+    width: 1000px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ab8b8d;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0px;
+    margin-bottom: 50px;
+}
+
+.main_list{
+    width: 800px;
+    border-radius: 10px;
+    background-color: #dfb9b1;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 20px 0px;
+}
+
+/* -- For Main Data Input -- */
+.main_list .new_input{
+    width: 640px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe9e3;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--shantell);
+    color: #6f5253;
+    padding-left: 10px;
+}
+
+/* -- For Delete, Edit & Save Buttons -- */
+.delete_btn, .edit_btn, .save_btn{
+    width: 40px;
+    font-size: 23px;
+    color: #6f5253;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.delete_btn:hover, .edit_btn:hover {
+    color: #ffe0d8;
+}
+
+.save_btn{
+    display: none;
+    color: #ffe0d8;
+}
+
+.save_btn:hover{
+    color: #6f5253;
+}
+
+/* -- For Completed Mark Button -- */
+
+.complete_btn{
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: #b39d9f;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.complete_btn:hover{
+    color: #6f5253;
+}
+
+/* ==================== task css part end ==================== */
+
+/* ==================== all tooltips css part start ==================== */
+
+/* -- tooltips for buttons -- */
+.tooltips{
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ffe9e3;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--roboto);
+    color: #573b3b;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    opacity: 0.8;
+}
+
+/* -- tooltips for empty inputs -- */
+.input_tooltips, .newInput_tooltips {
+    width: 230px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #856969;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    color: #ffe9e3;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 80px;
+    top: -40px;
+    animation: error 1s linear alternate infinite; /* -- Keyframe Animation -- */
+}
+
+.newInput_tooltips{
+    width: 300px;
+}
+
+.input_tooltips::before, .newInput_tooltips::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #856969;
+    transform: rotate(45deg);
+    left: 20px;
+    bottom: -5px;
+}
+
+/* -- @Keyframe for input_tooltips -- */
+@keyframes error {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ==================== all tooltips css part end ==================== */
